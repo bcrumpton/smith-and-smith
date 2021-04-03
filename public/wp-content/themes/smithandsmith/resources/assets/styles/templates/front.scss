@@ -1,0 +1,15 @@
+.page-template-front {
+  .page-header {
+    padding: 200px 0;
+    background-image: url(../../images/car-accident.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+      color: $white;
+      font-weight: 700;
+      font-family: $raleway;
+      margin-bottom: 2rem;
+    }
+  }
+}

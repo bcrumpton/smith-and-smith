@@ -1,0 +1,11 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$raleway: "Raleway", sans-serif;
+$smithBlue: #0072bc;
+$black: #000;
+$white: #fff;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
