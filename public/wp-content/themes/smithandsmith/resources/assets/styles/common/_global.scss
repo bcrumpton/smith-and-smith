@@ -2,6 +2,24 @@
   font-family: $raleway;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
+}
+
+h1 {
+  .black {
+    color: $black;
+  }
+
+  .white {
+    color: $white;
+  }
+}
+
+.col-sm-12 {
+  margin-bottom: 2rem;
 }

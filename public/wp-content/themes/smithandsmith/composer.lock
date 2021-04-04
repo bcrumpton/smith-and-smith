@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f31f679ab253b90c13366000decce59b",
+    "content-hash": "68901069b5963bfe6a2d797152f1352b",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -672,6 +672,50 @@
             "time": "2018-10-02T13:27:20+00:00"
         },
         {
+            "name": "josh-taylor/sage-svg",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/josh-taylor/sage-svg.git",
+                "reference": "caa216f79d7523d4774dc69ee284fe1133742992"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/josh-taylor/sage-svg/zipball/caa216f79d7523d4774dc69ee284fe1133742992",
+                "reference": "caa216f79d7523d4774dc69ee284fe1133742992",
+                "shasum": ""
+            },
+            "require": {
+                "nothingworks/blade-svg": "^0.3.0"
+            },
+            "type": "package",
+            "autoload": {
+                "files": [
+                    "sage-svg.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Taylor",
+                    "email": "joshotaylor@gmail.com"
+                }
+            ],
+            "description": "WordPress package to enable a blade directive to use SVG images inline with Sage 9",
+            "homepage": "https://github.com/josh-taylor",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/josh-taylor/sage-svg/issues",
+                "source": "https://github.com/josh-taylor/sage-svg/tree/master"
+            },
+            "time": "2018-08-31T10:04:44+00:00"
+        },
+        {
             "name": "kylekatarnls/update-helper",
             "version": "1.2.1",
             "source": {
@@ -793,6 +837,61 @@
                 "source": "https://github.com/briannesbitt/Carbon"
             },
             "time": "2019-06-03T17:56:44+00:00"
+        },
+        {
+            "name": "nothingworks/blade-svg",
+            "version": "v0.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adamwathan/blade-svg.git",
+                "reference": "600269d60efe52bf9fc2cc610b21744cd69425df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adamwathan/blade-svg/zipball/600269d60efe52bf9fc2cc610b21744cd69425df",
+                "reference": "600269d60efe52bf9fc2cc610b21744cd69425df",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^5.3|^6.0|^7.0",
+                "illuminate/support": "^5.3|^6.0|^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.5",
+                "phpunit/phpunit": "^5.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeSvg\\BladeSvgServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BladeSvg\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/adamwathan/blade-svg/issues",
+                "source": "https://github.com/adamwathan/blade-svg/tree/v0.3.4"
+            },
+            "abandoned": "blade-ui-kit/blade-icons",
+            "time": "2020-03-03T13:55:12+00:00"
         },
         {
             "name": "psr/container",

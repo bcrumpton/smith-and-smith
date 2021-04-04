@@ -1,15 +1,104 @@
 .page-template-front {
-  .page-header {
+  .page-header,
+  .heading-button {
     padding: 200px 0;
-    background-image: url(../../images/car-accident.jpg);
     background-size: cover;
     background-position: center center;
+    position: relative;
+
+    /* stylelint-disable */
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.49590320121951215) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+    /* stylelint-enable */
+
+    .row {
+      position: relative;
+      z-index: 1;
+    }
 
     h1 {
       color: $white;
       font-weight: 700;
       font-family: $raleway;
       margin-bottom: 2rem;
+    }
+  }
+
+  .page-header {
+    background-image: url(../../images/car-accident.jpg);
+  }
+
+  .heading-button {
+    background-image: url(../../images/power-line.jpg);
+  }
+
+  .callout {
+    background: $smithBlue;
+    padding: 2rem 0;
+
+    h2 {
+      font-weight: 700;
+      text-align: center;
+      font-style: italic;
+      color: $white;
+    }
+  }
+
+  .pil {
+    padding: 4rem 0;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 2rem;
+    }
+
+    .title-row {
+      padding-bottom: 4rem;
+
+      @include media-breakpoint-down(sm) {
+        padding-bottom: 2rem;
+      }
+
+      .heading-line {
+        position: relative;
+      }
+
+      .line {
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      h3 {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        background: $white;
+        width: 75%;
+        margin: 0 auto;
+      }
+    }
+
+    .content-row {
+      p {
+        padding: 1rem 0;
+      }
     }
   }
 }
